@@ -16,6 +16,7 @@ import javax.annotation.Resource;
 @RequestMapping("test")
 public class TestController {
 
+
     @Resource
     SayGoodbyeClient sayGoodbyeClient;
 
