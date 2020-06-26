@@ -1,7 +1,7 @@
-package io.tanghuibo.githubo.springfeignstudy.controller;
+package io.tanghuibo.github.springfeignstudy.controller;
 
-import io.tanghuibo.githubo.springfeignstudy.client.SayGoodbyeClient;
-import io.tanghuibo.githubo.springfeignstudy.client.SayHelloClient;
+import io.tanghuibo.github.springfeignstudy.client.SayGoodbyeClient;
+import io.tanghuibo.github.springfeignstudy.client.SayHelloClient;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;

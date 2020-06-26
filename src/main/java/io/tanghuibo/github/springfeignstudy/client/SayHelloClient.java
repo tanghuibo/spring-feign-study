@@ -1,4 +1,4 @@
-package io.tanghuibo.githubo.springfeignstudy.client;
+package io.tanghuibo.github.springfeignstudy.client;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;

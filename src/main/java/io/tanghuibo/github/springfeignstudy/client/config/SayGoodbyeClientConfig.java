@@ -1,4 +1,4 @@
-package io.tanghuibo.githubo.springfeignstudy.client.config;
+package io.tanghuibo.github.springfeignstudy.client.config;
 
 import feign.RequestInterceptor;
 import org.slf4j.Logger;
