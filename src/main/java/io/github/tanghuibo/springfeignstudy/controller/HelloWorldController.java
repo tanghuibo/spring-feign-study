@@ -1,4 +1,4 @@
-package io.tanghuibo.github.springfeignstudy.controller;
+package io.github.tanghuibo.springfeignstudy.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

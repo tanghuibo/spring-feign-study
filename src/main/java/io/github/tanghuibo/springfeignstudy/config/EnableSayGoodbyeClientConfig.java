@@ -1,7 +1,7 @@
-package io.tanghuibo.github.springfeignstudy.config;
+package io.github.tanghuibo.springfeignstudy.config;
 
-import io.tanghuibo.github.springfeignstudy.client.SayGoodbyeClient;
-import io.tanghuibo.github.springfeignstudy.client.config.SayGoodbyeClientConfig;
+import io.github.tanghuibo.springfeignstudy.client.SayGoodbyeClient;
+import io.github.tanghuibo.springfeignstudy.client.config.SayGoodbyeClientConfig;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.Configuration;
 

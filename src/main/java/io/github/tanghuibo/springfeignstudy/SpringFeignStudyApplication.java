@@ -1,4 +1,4 @@
-package io.tanghuibo.github.springfeignstudy;
+package io.github.tanghuibo.springfeignstudy;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

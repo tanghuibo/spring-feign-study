@@ -1,4 +1,4 @@
-package io.tanghuibo.github.springfeignstudy.client;
+package io.github.tanghuibo.springfeignstudy.client;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,17 +9,17 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @date 2020/6/23下午11:44
  */
 @FeignClient(
-        name = "sayHelloClient",
+        name = "sayGoodbyeClient",
         url = "http://127.0.0.1:8080",
         path = "helloWorld"
 )
-public interface SayHelloClient {
+public interface SayGoodbyeClient {
 
     /**
-     * say goodbye
+     * say hello
      * @param name
      * @return
      */
-    @GetMapping("sayHello")
-    String sayHello(@RequestParam("name") String name);
+    @GetMapping("sayGoodbye")
+    String sayGoodbye(@RequestParam("name") String name);
 }
