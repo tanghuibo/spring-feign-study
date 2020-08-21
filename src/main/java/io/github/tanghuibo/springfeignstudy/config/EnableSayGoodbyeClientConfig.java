@@ -1,7 +1,5 @@
 package io.github.tanghuibo.springfeignstudy.config;
 
-import io.github.tanghuibo.springfeignstudy.client.SayGoodbyeClient;
-import io.github.tanghuibo.springfeignstudy.client.config.SayGoodbyeClientConfig;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.Configuration;
 
@@ -11,8 +9,7 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 @EnableFeignClients(
-        clients = SayGoodbyeClient.class,
-        defaultConfiguration = SayGoodbyeClientConfig.class
+        basePackages = "io.github.tanghuibo.springfeignstudy.client.goodbye"
 )
 public class EnableSayGoodbyeClientConfig {
 }

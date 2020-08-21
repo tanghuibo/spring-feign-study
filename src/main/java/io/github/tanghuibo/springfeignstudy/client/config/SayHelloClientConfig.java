@@ -14,7 +14,7 @@ public class SayHelloClientConfig {
     Logger logger = LoggerFactory.getLogger(SayHelloClientConfig.class);
 
 
-    @Bean
+    @Bean("feignLoggerLevel1")
     RequestInterceptor feignLoggerLevel(){
         return requestTemplate -> {
             logger.info("sayHello:" + requestTemplate.toString());

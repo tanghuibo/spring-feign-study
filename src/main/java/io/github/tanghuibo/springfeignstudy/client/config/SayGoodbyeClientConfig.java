@@ -14,7 +14,7 @@ public class SayGoodbyeClientConfig {
     Logger logger = LoggerFactory.getLogger(SayGoodbyeClientConfig.class);
 
 
-    @Bean
+    @Bean("feignLoggerLevel2")
     RequestInterceptor feignLoggerLevel(){
         return requestTemplate -> {
             logger.info("sayGoodBay:" + requestTemplate.toString());

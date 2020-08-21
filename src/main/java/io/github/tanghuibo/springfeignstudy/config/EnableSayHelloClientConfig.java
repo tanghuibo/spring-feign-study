@@ -1,6 +1,5 @@
 package io.github.tanghuibo.springfeignstudy.config;
 
-import io.github.tanghuibo.springfeignstudy.client.SayHelloClient;
 import io.github.tanghuibo.springfeignstudy.client.config.SayHelloClientConfig;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.Configuration;
@@ -11,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 @EnableFeignClients(
-        clients = SayHelloClient.class,
+        basePackages = "io.github.tanghuibo.springfeignstudy.client.hello",
         defaultConfiguration = SayHelloClientConfig.class
 )
 public class EnableSayHelloClientConfig {
