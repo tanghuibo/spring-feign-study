@@ -23,8 +23,9 @@ spring 框架集成 feign 学习
 ```java
 @Configuration
 @EnableFeignClients(
-        clients = SayGoodbyeClient.class,
-        defaultConfiguration = SayGoodbyeClientConfig.class
+        clients = SayGoodbyeClient.class
+//        defaultConfiguration 的作用域是全局的，不要配置
+//        defaultConfiguration = SayGoodbyeClientConfig.class
 )
 public class EnableSayGoodbyeClientConfig {
 }
@@ -35,10 +36,33 @@ public class EnableSayGoodbyeClientConfig {
 ```java
 @Configuration
 @EnableFeignClients(
-        clients = SayHelloClient.class,
-        defaultConfiguration = SayHelloClientConfig.class
+        clients = SayHelloClient.class
+//        defaultConfiguration 的作用域是全局的，不要配置
+//        defaultConfiguration = SayHelloClientConfig.class
 )
 public class EnableSayHelloClientConfig {
+}
+```
+
+- FeignClient
+
+```java
+@FeignClient(
+        name = "sayGoodbyeClient",
+//      configuration 的作用域是单个client
+        configuration = SayGoodbyeClientConfig.class
+)
+public interface SayGoodbyeClient { 
+}
+```
+
+```java
+@FeignClient(
+        name = "sayHelloClient",
+//      configuration 的作用域是单个client
+        configuration = SayHelloClientConfig.class
+)
+public interface SayHelloClient {
 }
 ```
 
